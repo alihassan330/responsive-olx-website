@@ -12,6 +12,30 @@
   align-items: center;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navigation1 {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  margin: 5px 0;
+}
+
+.sel2 {
+  padding: 5px;
+}
+
 .container1 {
   display: flex;
   align-items: center;
@@ -45,13 +69,18 @@
   display: flex;
   justify-content: center;
 }
-
+.container3 img {
+  width: 100%;
+}
 .navigation1 ul {
   display: flex;
   align-items: center;
   list-style-type: none;
   gap: 20px;
   margin-bottom: 35px;
+}
+.navigation1 ul li{
+  font-size: 22px;
 }
 .sel2 {
   border: none;
@@ -89,7 +118,7 @@ h2 {
   justify-content: center;
   text-align: center;
   display: flex;
-  width: 160px;
+  width: 300px;
 }
 .section {
   max-width: 1200px;
@@ -117,6 +146,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center
 }
 
 .card {
@@ -247,6 +277,7 @@ h2 {
   margin: auto;
   align-items: center;
   gap: 20px;
+  justify-content: center;
 }
 
 .footer-image img {
@@ -318,7 +349,24 @@ hr {
   color: #666;
   margin-top: 20px;
 }
+@media (max-width: 914px) {
+  .navigation1 ul {
+    gap: 15px;
+  }
 
+  .navigation1 ul li {
+    font-size: 18px;
+  }
+}
+@media (max-width: 778px) {
+  .navigation1 ul {
+    gap: 10px;
+  }
+
+  .navigation1 ul li {
+    font-size: 14px;
+  }
+}
 /* Responsive styles for tablets and mobile */
 @media (max-width: 768px) {
   .footer-top {
@@ -348,12 +396,42 @@ hr {
     height: 22px;
   }
 }
+@media (max-width: 645px) {
+  .navigation1 ul {
+    gap: 6px;
+  }
 
+  .navigation1 ul li {
+    font-size: 12px;
+  }
+}
+@media (max-width: 598px) {
+.container2 {
+    display: flex
+;
+    align-items: center;
+    gap: 10px;
+}
+}
+@media (max-width: 517px) {
+.navigation1 ul li {
+    font-size: 9px;
+  }
+  .container2 input {
+    width: 120px;
+    height: 40px;
+    font-size: 12px;
+}
+}
 @media (max-width: 480px) {
   .footer-app-text h2 {
     font-size: 20px;
   }
-
+.img-wrapper {
+    
+    padding: 8px 20px;
+    font-size: 12px;
+}
   .footer-app-text p {
     font-size: 14px;
   }
